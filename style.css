@@ -73,6 +73,7 @@ a {
   height: 3em;
   font-size: 2rem;
   margin-top: 1vh;
+  padding: 0 10vw;
 }
 
 .main-massage p {
@@ -95,7 +96,7 @@ a {
 }
 
 #scroll-section-2 .main-massage {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 #scroll-section-2 .main-massage small {
@@ -107,6 +108,7 @@ a {
 .desc-massage {
   font-weight: bold;
   width: 50%;
+  margin-top: 2em;
 }
 
 .pin {
