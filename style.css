@@ -27,11 +27,15 @@ a {
 
 .global-nav,
 .local-nav {
+  position: absolute;
+  top: 0;
   height: 5vh;
   width: 80vw;
 }
 
 .local-nav {
+  position: absolute;
+  top: 4vh;
   border-bottom: 1px solid #ddd;
 }
 
