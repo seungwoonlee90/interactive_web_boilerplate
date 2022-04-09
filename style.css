@@ -66,7 +66,7 @@ a {
   text-align: center;
 }
 
-#scroll-section-0 .main-massage {
+.main-massage {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +75,7 @@ a {
   margin-top: 1vh;
 }
 
-#scroll-section-0 .main-massage p {
+.main-massage p {
   line-height: 1.2;
   font-weight: bold;
   text-align: center;
@@ -92,4 +92,51 @@ a {
   margin-right: 0.2em;
   font-size: 3rem;
   color: black;
+}
+
+#scroll-section-2 .main-massage {
+  font-size: 3.5rem;
+}
+
+#scroll-section-2 .main-massage small {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+.desc-massage {
+  font-weight: bold;
+  width: 50%;
+}
+
+.pin {
+  width: 1px;
+  height: 100px;
+  background-color: black;
+}
+
+.mid-message {
+  padding: 0 10vw;
+  font-size: 2rem;
+  color: #888;
+}
+
+.mid-message strong {
+  display: block;
+  color: black;
+}
+
+.canvas-caption {
+  padding: 0 10vw;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  width: 100vw;
+  background-color: #888;
 }
