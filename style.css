@@ -78,6 +78,7 @@ a {
   font-size: 2rem;
   margin-top: 1vh;
   padding: 0 10vw;
+  opacity: 0;
 }
 
 .main-massage p {
