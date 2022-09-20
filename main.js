@@ -2,6 +2,8 @@
     let yOffset = 0;
     let prevScrollHeight = 0;
     let currentScene = 0;
+    let enterNewScene = false;
+
     const sceneInfo = [
         {   
             index: 0,
@@ -94,21 +96,25 @@
     }
 
     function scrollLoop() {
+        enterNewScene = false;
         prevScrollHeight = 0;
         for(let i=0; i<currentScene; i++) {
             prevScrollHeight = prevScrollHeight + sceneInfo[i].scrollHeight;
         }
         if (yOffset > prevScrollHeight + sceneInfo[currentScene].scrollHeight) {
+            enterNewScene = true;
             currentScene++;
             document.body.setAttribute("id", `show-scene-${currentScene}`);
         }
 
         if (yOffset < prevScrollHeight) {
-            if(currentScene === 0) return
+            enterNewScene = true;
+            if(currentScene === 0) return;
             currentScene--;
             document.body.setAttribute("id", `show-scene-${currentScene}`);
         }
-
+        
+        if (enterNewScene) return;
         playAnimation();
     }
 
